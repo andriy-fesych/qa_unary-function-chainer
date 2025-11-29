@@ -3,9 +3,17 @@
 describe('chainer function', () => {
   const { chainer } = require('./chainer');
 
-  function f1(x) {return x + 10};
-  function f2(x) {return x + 100};
-  function f3(x) {return x + 1000};
+  function f1(x) {
+    return x + 10;
+  };
+
+  function f2(x) {
+    return x + 100;
+  };
+
+  function f3(x) {
+    return x + 1000;
+  };
 
   let mockedF1, mockedF2, mockedF3;
 
