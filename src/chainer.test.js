@@ -65,4 +65,12 @@ describe('chainer function', () => {
     expect(chainedFn(5)).toBe(115);
     expect(chainedFn(10)).toBe(120);
   });
+
+  test('should work with example case', () => {
+    const f1ex = (x) => x * 2;
+    const f2ex = (x) => x + 2;
+    const f3ex = (x) => Math.pow(x, 2);
+
+    expect(chainer([f1ex, f2ex, f3ex])(0)).toBe(4);
+  });
 });
